@@ -4,7 +4,7 @@ metadata:
   name: nginx
   description: this be nginx
   annotations:
-    'backstage.io/kubernetes-label-selector': 'app=my-app,component=front-end'
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/name=ingress-nginx'
 spec:
   type: service
   lifecycle: experimental
