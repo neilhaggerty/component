@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: nginx
+  description: this be nginx
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app=my-app,component=front-end'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: team-a
+  system: artist-engagement-portal
